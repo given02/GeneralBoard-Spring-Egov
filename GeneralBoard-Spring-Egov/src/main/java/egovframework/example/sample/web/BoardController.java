@@ -24,10 +24,6 @@ public class BoardController {
 	@RequestMapping(value = "/board.do")
 	public String board(@ModelAttribute("boardVO")BoardVO vo, ModelMap model) throws Exception{
 		
-		
-		System.err.println(vo.getSearchCondition());
-		System.err.println(vo.getSearchKeyword());
-		
 		vo.setPageUnit(5);
 		vo.setPageSize(5);
 		
