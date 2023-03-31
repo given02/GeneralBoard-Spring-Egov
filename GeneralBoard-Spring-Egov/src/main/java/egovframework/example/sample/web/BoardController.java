@@ -51,7 +51,6 @@ public class BoardController {
 
 		EgovMap result = boardService.selectDetail(vo.getIdx());
 		model.addAttribute("result", result);
-		System.err.println(result);
 		
 		return "board/boardWrite";
 	}
